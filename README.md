@@ -17,7 +17,19 @@ This repository hosts a walkthrough of our process to determine peer communities
 
 In order to carry out this set of analyses, a number of different dataframes need to be prepped and exported. While we will be visualizing different parts of the scenarios geographically, we won't be bringing any shapefiles into the file prep because it takes less memory to clean data and export it as a csv and then quickly join the Census Tiger files when they are needed further down the line. The dataframes that are prepped are listed below:  
 
-+ *Prep Time Series Two Five Year Estimates CBSA Level:* This file contains API calls that can be updated to reflect the most recent 5 Year Estimate and the previous, non-overlapping Estimate, for population by age and sex as well as home value (an indicator for area wealth), and any other factors that you want to add.
++ *Prep Time Series Two Five Year Estimates CBSA Level:* This file contains API calls that can be updated to reflect the most recent 5 Year Estimate and the previous, non-overlapping Estimate, for population by age and sex as well as home value (an indicator for area wealth), and any other factors that you want to add. This notebook goes through joining these dataframes together, cleaning the data, summing groups together that represent ages under 18, ages 18-64, and ages 65+. Finally, real change, percent change, and change in total population share are calculated for these groups respectively. Males and females are summed together to create total population, however this could be disaggregated. The data is also available by race, so this could be disaggregated as well.
+
++ *Prep Time Series Two Five Year Estimates County Level:* This notebook is a duplicate of the CBSA notebook of the same name, adjusted for county level geography and the data cleaning is altered to reflect this.
+
+    + *The ACS 5-Year Estimates allow us to have a high level of confidence when we look at the numbers, and this format is used for clustering scenarios.*
+
++ *Prep Decade of One Year Estimates CBSA Level:* This file contains API calls that can be updated to reflect the last decade of One-Year Estimates for population by age and sex as well as home value (an indicator for area wealth), and any other factors that you want to add. This notebook goes through joining these dataframes together, cleaning the data, summing groups together and calculating change measures.
+
++ *Prep Decade of One Year Estimates County Level:* This notebook is a duplicate of the CBSA notebook of the same name, adjusted for county level geography and the data cleaning is altered to reflect this.
+
+    + *The ACS 1-Year Estimates allow us to examine year over year shifts instead of looking at entire 5-year periods. While this data is a relatively small sample size, especially for smaller geographies like Counties, it can still be used to reliably examine trends. This data is used to perform linear regressions and find our peer communities by projecting patterns.*
+
+
 
 ## Scenarios  
 
