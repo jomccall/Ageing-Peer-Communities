@@ -3,6 +3,7 @@
 ## *Table of Contents*
 + Overview   
 + Data Prep  
++ Technologies  
 + Scenario One
     + *Use K-Means Clustering to cluster off CBSAs and Counties based on change in elderly (65+) population share and total..... from two American Community Survey 5-Year Estimates.*  
 + Scenario Two  
@@ -29,7 +30,18 @@ In order to carry out this set of analyses, a number of different dataframes nee
 
     + *The ACS 1-Year Estimates allow us to examine year over year shifts instead of looking at entire 5-year periods. While this data is a relatively small sample size, especially for smaller geographies like Counties, it can still be used to reliably examine trends. This data is used to perform linear regressions and find our peer communities by projecting patterns.*
 
+## Technologies  
 
+*This analysis is completed using Python in Jupyter Notebooks*  
+
+Packages used include:  
++ `pandas`  
++ `numpy`  
++ `matplotlib`  
++ `geopandas`  
++ `folium`  
++ `branca`  
++ `sklearn`
 
 ## Scenarios  
 
