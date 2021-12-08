@@ -33,4 +33,8 @@ In order to carry out this set of analyses, a number of different dataframes nee
 
 ## Scenarios  
 
-### *Scenario One*
+### *Linear Regression for Dependent and Independent Variables*
+
+### *K-Means Clustering for Two - Four Variables*
+
+### *Hierarchical Clustering for Two - Four Variables*
