@@ -35,6 +35,12 @@ In order to carry out this set of analyses, a number of different dataframes nee
 
 ### *Linear Regression for Dependent and Independent Variables*
 
++ Use one decade of one-year ACS estimates to examine the relationship between population growth of various groups and with area wealth. Create visualizations of these relationships.   
++ Select a couple pairs of variables with a close linear relationship.
++ Use `sklearn` to create a linear regression and then project share of elderly population and total elderly population 5 and 10 years into the future.  
++ Break these projections into percentiles and isolate the percentile of geographies in the same category as our geography in question.  
++ Map these geographies and give example of other sorts of data or information you can examine about our *peers*.
+
 ### *K-Means Clustering for Two - Four Variables*
 
 ### *Hierarchical Clustering for Two - Four Variables*
